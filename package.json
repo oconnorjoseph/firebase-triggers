@@ -1,5 +1,5 @@
 {
-  "name": "firebase-triggers",
+  "name": "@oconnorjoseph/firebase-triggers",
   "version": "0.0.8",
   "description": "TypeScript decorators to assign Firebase triggers to regular methods",
   "main": "lib/index.js",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrebraghini/firebase-triggers.git"
+    "url": "git+https://github.com/oconnorjoseph/firebase-triggers.git"
   },
   "keywords": [
     "firebase",
@@ -34,7 +34,7 @@
   "author": "Andre Braghini",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andrebraghini/firebase-triggers/issues"
+    "url": "https://github.com/oconnorjoseph/firebase-triggers/issues"
   },
   "homepage": "https://github.com/andrebraghini/firebase-triggers#readme",
   "devDependencies": {
