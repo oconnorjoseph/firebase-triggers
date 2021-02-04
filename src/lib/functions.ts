@@ -31,6 +31,7 @@ const triggerMethods = {
     }
     return functions.pubsub.schedule(scheduleObj.interval).onRun(handler);
   },
+  CALLABLE: (handler: any) => functions.https.onCall(handler),
 };
 
 /**

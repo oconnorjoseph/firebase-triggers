@@ -28,4 +28,7 @@ export enum FirebaseTriggerType {
 
   /** Triggered by HTTP requests */
   HTTP_REQUEST = 'HTTP_REQUEST',
+
+  /** Triggered as a callable function */
+  CALLABLE = 'CALLABLE',
 }
