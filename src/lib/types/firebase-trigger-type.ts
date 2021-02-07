@@ -31,4 +31,12 @@ export enum FirebaseTriggerType {
 
   /** Triggered as a callable function */
   CALLABLE = 'CALLABLE',
+
+  STORAGE_ARCHIVE = 'STORAGE_ARCHIVE',
+
+  STORAGE_DELETE = 'STORAGE_DELETE',
+
+  STORAGE_FINALIZE = 'STORAGE_FINALIZE',
+
+  STORAGE_METADATA_UPDATE = 'STORAGE_METADATA_UPDATE',
 }

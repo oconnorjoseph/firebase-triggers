@@ -32,6 +32,34 @@ const triggerMethods = {
     return functions.pubsub.schedule(scheduleObj.interval).onRun(handler);
   },
   CALLABLE: (handler: any) => functions.https.onCall(handler),
+  STORAGE_ARCHIVE: (handler: any, bucketName?: string) => {
+      if (!bucketName) {
+          return functions.storage.object().onArchive(handler);
+      } else {
+          return functions.storage.bucket(bucketName).object().onArchive(handler);
+      }
+  },
+  STORAGE_DELETE: (handler: any, bucketName?: string) => {
+      if (!bucketName) {
+          return functions.storage.object().onDelete(handler);
+      } else {
+          return functions.storage.bucket(bucketName).object().onDelete(handler);
+      }
+  },
+  STORAGE_FINALIZE: (handler: any, bucketName?: string) => {
+      if (!bucketName) {
+          return functions.storage.object().onFinalize(handler);
+      } else {
+          return functions.storage.bucket(bucketName).object().onFinalize(handler);
+      }
+  },
+  STORAGE_METADATA_UPDATE: (handler: any, bucketName?: string) => {
+      if (!bucketName) {
+          return functions.storage.object().onMetadataUpdate(handler);
+      } else {
+          return functions.storage.bucket(bucketName).object().onMetadataUpdate(handler);
+      }
+  }
 };
 
 /**
